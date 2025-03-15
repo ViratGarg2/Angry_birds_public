@@ -14,15 +14,11 @@ This is a basic Angry Birds-inspired game developed using the **p5.js** library 
 - ⚙️ **Matter.js** (Physics engine for realistic motion)
 
 ## 🔧 Installation
-1. Clone this repository (Private Repository):
+1. Clone this repository :
    ```sh
-   git clone https://github.com/yourusername/Angry-Birds.git
+   git clone https://github.com/yourusername/Angry_birds_public.git
    ```
-2. Navigate to the project directory:
-   ```sh
-   cd angry-birds-clone
-   ```
-3. Open `index.html` in a browser or use a local server to run the game.
+2. Open `index.html` in a browser or use a local server to run the game.
 
 ## 🎮 How to Play
 1. 🎯 Click and drag the bird to aim.
@@ -34,8 +30,5 @@ This is a basic Angry Birds-inspired game developed using the **p5.js** library 
 - 🦜 Add different bird types with unique abilities.
 - 🏗️ Improve level designs with more obstacles.
 - 🔊 Implement animations and sound effects.
-
-## 📜 License
-This project is private and not available for public distribution.
 
 
