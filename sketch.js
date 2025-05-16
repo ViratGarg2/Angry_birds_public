@@ -60,12 +60,12 @@ function draw(){
         text("Turns:"+ turns,300,50)
         if(display == 1){
             textSize(50);
-            text("No Turns left",width/2,height/2);
+            text("No Turns left",width/2-150,height/2);
         }
         if(score>=400){
             textSize(50);
-            text("You Won !!",width/2-50,height/2);
-            
+            display = 2;
+            text("You Won !!",width/2-150,height/2);
         }
     Engine.update(engine);
     box1.display();
@@ -88,28 +88,31 @@ function draw(){
 }
 
 function mouseDragged(){
-    if (gameState!=="launched" && turns>0){
+    if (gameState!=="launched" && turns>0 && display == 0){
         Matter.Body.setPosition(bird.body, {x: mouseX , y: mouseY});
     }
-    if(turns == 0 && score<400){
-        display = 1;
-    }
+
 }
 
 
 function mouseReleased(){
+    if(turns>0 && display == 0){
     slingshot.fly();
     gameState = "launched";
     if(turns>0){
     turns--;
     }
 }
+}
 
 function keyPressed(){
-    if(keyCode === 32){
+    if(keyCode === 32 && display == 0){
     Matter.Body.setPosition(bird.body,{x : 200,y : 50 })
        slingshot.attach(bird.body);
        gameState = "onSling"
+    }
+    if(turns == 0 && score<400){
+        display = 1;
     }
 }
 
