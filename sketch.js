@@ -65,6 +65,7 @@ function draw(){
         if(score>=400){
             textSize(50);
             text("You Won !!",width/2-50,height/2);
+            
         }
     Engine.update(engine);
     box1.display();
