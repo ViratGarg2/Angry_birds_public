@@ -3,7 +3,7 @@
 ## Description
 This is a basic Angry Birds-inspired game developed using the **p5.js** library along with a physics engine. The game involves launching a bird towards targets (such as pigs) using a slingshot mechanism, with the goal of knocking them down.
 ## Deployment
-https://vercel.com/virat-gargs-projects/angry-birds
+https://angry-birds-seven.vercel.app/
 
 ##  Features
 -  **Slingshot Mechanics**: Drag and release the bird to launch it towards the targets.
